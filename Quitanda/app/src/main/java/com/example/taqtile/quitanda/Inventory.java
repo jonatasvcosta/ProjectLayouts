@@ -2,16 +2,33 @@ package com.example.taqtile.quitanda;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class Inventory extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        ArrayList<Product> list = new ArrayList<Product>();
+        list.add(new Product("banana",R.drawable.fruitlogo,false));
+        list.add(new Product("apple",R.drawable.fruitlogo,false));
+        list.add(new Product("orange",R.drawable.fruitlogo,false));
+        list.add(new Product("avocado", R.drawable.fruitlogo, false));
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inventory);
+        RecyclerView rvProducts = (RecyclerView) findViewById(R.id.itensList);
+        rvProducts.setHasFixedSize(true);
+        rvProducts.setLayoutManager(new LinearLayoutManager(this));
+        ProductAdapter adapter = new ProductAdapter(list);
+        rvProducts.setAdapter(adapter);
+
+
     }
 
     @Override

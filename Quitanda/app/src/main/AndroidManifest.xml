@@ -10,15 +10,16 @@
         <activity
             android:name=".LogIn"
             android:label="@string/app_name" >
+
+        </activity>
+        <activity
+            android:name=".Inventory"
+            android:label="@string/title_activity_inventory" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".Inventory"
-            android:label="@string/title_activity_inventory" >
         </activity>
     </application>
 
