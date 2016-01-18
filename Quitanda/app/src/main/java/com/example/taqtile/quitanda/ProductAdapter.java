@@ -1,6 +1,7 @@
 package com.example.taqtile.quitanda;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,6 +19,7 @@ import java.util.ArrayList;
 public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHolder> {
     private ArrayList<Product> mProducts;
     private static Context mContext;
+
     public ProductAdapter(ArrayList<Product> products, Context context){
         mProducts = products;
         mContext = context;
@@ -27,6 +29,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
         CheckBox checkBox;
         TextView name;
         ImageView img;
+        private Intent mIntent;
         public ViewHolder(View itemView){
             super(itemView);
             itemView.setClickable(true);
@@ -38,7 +41,8 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
 
         @Override
         public void onClick(View v) {
-            Toast.makeText(mContext,"You clicked "+getAdapterPosition(),Toast.LENGTH_SHORT).show();
+            mIntent = new Intent(mContext, ProductDescription.class);
+            mContext.startActivity(mIntent);
         }
     }
     @Override

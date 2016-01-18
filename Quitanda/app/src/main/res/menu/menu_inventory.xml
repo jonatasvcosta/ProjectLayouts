@@ -3,15 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.taqtile.quitanda.Inventory">
     <item
-        android:id="@+id/gridButton"
+        android:id="@+id/shoppingCart"
         android:title="User"
         android:orderInCategory="100"
         app:showAsAction="always"
         app:actionViewClass="android.widget.Button"/>
     <item
-        android:id="@+id/listButton"
+        android:id="@+id/gridButton"
         android:title="User"
         android:orderInCategory="99"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.Button"/>
+    <item
+        android:id="@+id/listButton"
+        android:title="User"
+        android:orderInCategory="98"
         app:showAsAction="always"
         app:actionViewClass="android.widget.Button"/>
 

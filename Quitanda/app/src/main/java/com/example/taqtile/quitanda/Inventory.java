@@ -54,6 +54,7 @@ public class Inventory extends ActionBarActivity {
         alphaAdapter.setDuration(500);
         rvProducts.setAdapter(alphaAdapter);
 
+
 //        RecyclerView.ItemDecoration itemDecoration = new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST);
 //        rvProducts.addItemDecoration(itemDecoration);
     }
@@ -93,6 +94,11 @@ public class Inventory extends ActionBarActivity {
                 rvProducts.setAdapter(alphaAdapter);
             }
         });
+        item = menu.findItem(R.id.shoppingCart);
+        Button shoppingCart = (Button) item.getActionView();
+        icon = getResources().getDrawable(R.drawable.cart);
+        shoppingCart.setBackgroundColor(Color.TRANSPARENT);
+        shoppingCart.setCompoundDrawablesWithIntrinsicBounds(null, icon, null, null);
 
         return true;
     }
