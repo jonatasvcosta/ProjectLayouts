@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppButton">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/font_size_medium</item>
+        <item name="font_family">@string/font_family_primary</item>
+        <item name="font_weight">@string/font_weight_regular</item>
+    </style>
+
+    <style name="AppButton.Primary">
+        <item name="android:background">@drawable/bkg_button_type_primary</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="AppButton.Secondary">
+        <item name="android:background">@drawable/bkg_button_type_secondary</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="AppButton.CallToAction">
+        <item name="android:background">@drawable/bkg_button_type_call_to_action</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="AppButton.Alert">
+        <item name="android:background">@drawable/bkg_button_type_alert</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="AppButton.Neutral">
+        <item name="android:background">@drawable/bkg_button_type_neutral</item>
+        <item name="android:textColor">@color/color_gray</item>
+    </style>
+
+    <style name="AppButton.Link">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@drawable/link_button_text_color</item>
+    </style>
+
+</resources>

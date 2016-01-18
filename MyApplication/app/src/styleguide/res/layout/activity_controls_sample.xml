@@ -1,0 +1,103 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    tools:context="com.example.taqtile.myapplication.SampleControlsActivity">
+
+    <LinearLayout
+        style="@style/SpaceInterSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_padding">
+
+        <LinearLayout
+            style="@style/SpaceInterContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                style="@style/TextElement.H3"
+                android:text="@string/activity_controls_title_button"
+                android:textAllCaps="true" />
+
+            <com.example.taqtile.myapplication.components.CustomButton
+                style="@style/AppButton.Primary"
+                android:text="@string/activity_controls_primary_button" />
+
+            <com.example.taqtile.myapplication.components.CustomButton
+                style="@style/AppButton.Secondary"
+                android:text="@string/activity_controls_secondary_button" />
+
+            <com.example.taqtile.myapplication.components.CustomButton
+                style="@style/AppButton.CallToAction"
+                android:text="@string/activity_controls_callToAction_button" />
+
+            <com.example.taqtile.myapplication.components.CustomButton
+                style="@style/AppButton.Neutral"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/activity_controls_neutral_button" />
+
+            <com.example.taqtile.myapplication.components.CustomButton
+                style="@style/AppButton.Alert"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/activity_controls_alert_button" />
+
+            <com.example.taqtile.myapplication.components.CustomLinkButton
+                style="@style/AppButton.Link"
+                android:layout_gravity="right"
+                android:text="@string/activity_controls_link_button" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/SpaceInterContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                style="@style/TextElement.H3"
+                android:text="@string/activity_controls_title_disabled_button"
+                android:textAllCaps="true" />
+
+            <com.example.taqtile.myapplication.components.CustomButton
+                style="@style/AppButton.Primary"
+                android:enabled="false"
+                android:text="@string/activity_controls_primary_button" />
+
+            <com.example.taqtile.myapplication.components.CustomButton
+                style="@style/AppButton.Secondary"
+                android:enabled="false"
+                android:text="@string/activity_controls_secondary_button" />
+
+            <com.example.taqtile.myapplication.components.CustomButton
+                style="@style/AppButton.CallToAction"
+                android:enabled="false"
+                android:text="@string/activity_controls_callToAction_button" />
+
+            <com.example.taqtile.myapplication.components.CustomButton
+                style="@style/AppButton.Neutral"
+                android:layout_gravity="center_horizontal"
+                android:enabled="false"
+                android:text="@string/activity_controls_neutral_button" />
+
+            <com.example.taqtile.myapplication.components.CustomButton
+                style="@style/AppButton.Alert"
+                android:layout_gravity="center_horizontal"
+                android:enabled="false"
+                android:text="@string/activity_controls_alert_button" />
+
+            <com.example.taqtile.myapplication.components.CustomLinkButton
+                style="@style/AppButton.Link"
+                android:layout_gravity="right"
+                android:enabled="false"
+                android:text="@string/activity_controls_link_button" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

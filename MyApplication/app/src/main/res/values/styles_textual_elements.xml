@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextElement">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="font_family">@string/font_family_primary</item>
+        <item name="font_weight">@string/font_weight_regular</item>
+    </style>
+
+    <style name="TextElement.Label">
+        <item name="android:textSize">@dimen/font_size_small</item>
+        <item name="font_weight">@string/font_weight_regular</item>
+        <item name="android:textColor">@color/color_gray_darkest</item>
+    </style>
+
+    <style name="TextElement.InputValue">
+        <item name="android:textSize">@dimen/font_size_medium</item>
+        <item name="font_weight">@string/font_weight_regular</item>
+        <item name="android:textColor">@color/color_gray_darkest</item>
+    </style>
+
+    <style name="TextElement.InputPlaceholder">
+        <item name="android:textSize">@dimen/font_size_small</item>
+        <item name="font_weight">@string/font_weight_light</item>
+        <item name="android:textColor">@color/color_gray_lightest</item>
+    </style>
+
+    <style name="TextElement.Caption">
+        <item name="android:textSize">@dimen/font_size_extra_small</item>
+        <item name="font_weight">@string/font_weight_light</item>
+        <item name="android:textColor">@color/color_gray_lighter</item>
+    </style>
+
+    <style name="TextElement.Caption.Error">
+        <item name="android:textSize">@dimen/font_size_extra_small</item>
+        <item name="font_weight">@string/font_weight_light</item>
+        <item name="android:textColor">@color/color_alert</item>
+    </style>
+
+    <style name="TextElement.Body">
+        <item name="android:textSize">@dimen/font_size_small</item>
+        <item name="font_weight">@string/font_weight_regular</item>
+        <item name="android:textColor">@color/color_gray_lighter</item>
+    </style>
+
+    <style name="TextElement.H1">
+        <item name="android:textSize">@dimen/font_size_extra_large</item>
+        <item name="android:textColor">@color/color_gray</item>
+    </style>
+
+    <style name="TextElement.H2">
+        <item name="android:textSize">@dimen/font_size_large</item>
+        <item name="android:textColor">@color/color_gray</item>
+    </style>
+
+    <style name="TextElement.H3">
+        <item name="android:textSize">@dimen/font_size_medium</item>
+        <item name="android:textColor">@color/color_gray</item>
+    </style>
+
+    <style name="TextElement.H4">
+        <item name="android:textSize">@dimen/font_size_small</item>
+        <item name="android:textColor">@color/color_gray</item>
+    </style>
+
+    <style name="TextElement.H5">
+        <item name="android:textSize">@dimen/font_size_extra_small</item>
+        <item name="android:textColor">@color/color_gray</item>
+    </style>
+
+</resources>
