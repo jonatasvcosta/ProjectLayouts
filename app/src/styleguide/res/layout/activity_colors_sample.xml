@@ -1,0 +1,322 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.taqtile.myapplication.activities.SampleColorsActivity">
+
+    <LinearLayout
+        style="@style/SpaceInterSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_padding">
+
+        <com.example.taqtile.myapplication.components.CustomTextView
+            style="@style/TextElement.H3"
+            android:text="@string/activity_colors_title_pallet"
+            android:textAllCaps="true" />
+
+        <LinearLayout
+            style="@style/SpaceInterContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                android:id="@+id/activity_colors_primary_color"
+                style="@style/TextElement.Label"
+                tools:text="@string/activity_colors_primary" />
+
+            <TextView
+                style="@style/AppButton"
+                android:background="@color/color_primary" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_primary">
+
+                <TextView
+                    style="@style/AppButton"
+                    android:background="@color/color_mask_highlighted" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_primary">
+
+                <TextView
+                    style="@style/AppButton"
+                    android:background="@color/color_mask_disabled" />
+            </FrameLayout>
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                android:id="@+id/activity_colors_secondary_color"
+                style="@style/TextElement.Label"
+                tools:text="@string/activity_colors_secondary" />
+
+            <TextView
+                style="@style/AppButton"
+                android:background="@color/color_secondary" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_secondary">
+
+                <TextView
+                    style="@style/AppButton"
+                    android:background="@color/color_mask_highlighted" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_secondary">
+
+                <TextView
+                    style="@style/AppButton"
+                    android:background="@color/color_mask_disabled" />
+            </FrameLayout>
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                android:id="@+id/activity_colors_accessory_color"
+                style="@style/TextElement.Label"
+                tools:text="@string/activity_colors_accessory" />
+
+            <TextView
+                style="@style/AppButton"
+                android:background="@color/color_accessory" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_accessory">
+
+                <TextView
+                    style="@style/AppButton"
+                    android:background="@color/color_mask_highlighted" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_accessory">
+
+                <TextView
+                    style="@style/AppButton"
+                    android:background="@color/color_mask_disabled" />
+            </FrameLayout>
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                android:id="@+id/activity_colors_alert_color"
+                style="@style/TextElement.Label"
+                tools:text="@string/activity_colors_alert" />
+
+            <TextView
+                style="@style/AppButton"
+                android:background="@color/color_alert" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_alert">
+
+                <TextView
+                    style="@style/AppButton"
+                    android:background="@color/color_mask_highlighted" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_alert">
+
+                <TextView
+                    style="@style/AppButton"
+                    android:background="@color/color_mask_disabled" />
+            </FrameLayout>
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                android:id="@+id/activity_colors_call_to_action_color"
+                style="@style/TextElement.Label"
+                tools:text="@string/activity_colors_call_to_action" />
+
+            <TextView
+                style="@style/AppButton"
+                android:background="@color/color_call_to_action" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_call_to_action">
+
+                <TextView
+                    style="@style/AppButton"
+                    android:background="@color/color_mask_highlighted" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_call_to_action">
+
+                <TextView
+                    style="@style/AppButton"
+                    android:background="@color/color_mask_disabled" />
+            </FrameLayout>
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                android:id="@+id/activity_colors_neutral_color"
+                style="@style/TextElement.Label"
+                tools:text="@string/activity_colors_neutral" />
+
+            <TextView
+                style="@style/AppButton"
+                android:background="@color/color_neutral" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_neutral">
+
+                <TextView
+                    style="@style/AppButton"
+                    android:background="@color/color_mask_highlighted" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_neutral">
+
+                <TextView
+                    style="@style/AppButton"
+                    android:background="@color/color_mask_disabled" />
+            </FrameLayout>
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                android:id="@+id/activity_colors_success_color"
+                style="@style/TextElement.Label"
+                tools:text="@string/activity_colors_success" />
+
+            <TextView
+                style="@style/AppButton"
+                android:background="@color/color_success" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_success">
+
+                <TextView
+                    style="@style/AppButton"
+                    android:background="@color/color_mask_highlighted" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_success">
+
+                <TextView
+                    style="@style/AppButton"
+                    android:background="@color/color_mask_disabled" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <com.example.taqtile.myapplication.components.CustomTextView
+            style="@style/TextElement.H3"
+            android:text="@string/activity_colors_title_gray_scale"
+            android:textAllCaps="true" />
+
+        <LinearLayout
+            style="@style/SpaceInterContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                android:id="@+id/activity_colors_lightest_gray"
+                style="@style/TextElement.Label"
+                tools:text="@string/activity_colors_lightest_gray" />
+
+            <TextView
+                style="@style/AppButton"
+                android:background="@color/color_gray_lightest" />
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                android:id="@+id/activity_colors_lighter_gray"
+                style="@style/TextElement.Label"
+                tools:text="@string/activity_colors_lighter_gray" />
+
+            <TextView
+                style="@style/AppButton"
+                android:background="@color/color_gray_lighter" />
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                android:id="@+id/activity_colors_gray"
+                style="@style/TextElement.Label"
+                tools:text="@string/activity_colors_gray" />
+
+            <TextView
+                style="@style/AppButton"
+                android:background="@color/color_gray" />
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                android:id="@+id/activity_colors_darker_gray"
+                style="@style/TextElement.Label"
+                tools:text="@string/activity_colors_darker_gray" />
+
+            <TextView
+                style="@style/AppButton"
+                android:background="@color/color_gray_darker" />
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                android:id="@+id/activity_colors_darkest_gray"
+                style="@style/TextElement.Label"
+                tools:text="@string/activity_colors_darkest_gray" />
+
+            <TextView
+                style="@style/AppButton"
+                android:background="@color/color_gray_darkest" />
+
+        </LinearLayout>
+
+        <com.example.taqtile.myapplication.components.CustomTextView
+            style="@style/TextElement.H3"
+            android:text="@string/activity_colors_title_black_and_white"
+            android:textAllCaps="true" />
+
+        <LinearLayout
+            style="@style/SpaceInterContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                android:id="@+id/activity_colors_black"
+                style="@style/TextElement.Label"
+                tools:text="@string/activity_colors_black" />
+
+            <TextView
+                style="@style/AppButton"
+                android:background="@color/color_black" />
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                android:id="@+id/activity_colors_white"
+                style="@style/TextElement.Label"
+                tools:text="@string/activity_colors_white" />
+
+            <TextView
+                style="@style/AppButton"
+                android:background="@color/color_white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

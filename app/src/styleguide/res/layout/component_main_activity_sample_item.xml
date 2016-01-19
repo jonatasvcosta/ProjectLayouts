@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/component_main_activity_sample_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg_transparent"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_padding">
+
+    <com.example.taqtile.myapplication.components.CustomTextView
+        android:id="@+id/component_main_activity_sample_item_title"
+        style="@style/TextElement.Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin" />
+
+    <include layout="@layout/drawable_section_divider" />
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTextView" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/color_black</item>
+    </style>
+
+    <!--Space Between Content-->
+    <style name="SpaceInterSection">
+        <item name="android:divider">@drawable/space_type_inter_section</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="SpaceInterContent">
+        <item name="android:divider">@drawable/space_type_inter_content</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+</resources>
