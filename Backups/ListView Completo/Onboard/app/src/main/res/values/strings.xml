@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Onboard</string>
+
+    <string name="hello_world">Android Onboard Test!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_detalhe_usuario">DetalheUsuario</string>
+</resources>

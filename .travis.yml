@@ -1,0 +1,101 @@
+language: android
+jdk: oraclejdk7
+android:
+  components:
+    - build-tools-23.0.1
+    - extra-google-google_play_services
+    - extra-google-m2repository
+    - extra-android-m2repository
+    - extra-android-support
+    - android-23
+  licenses:
+    - android-sdk-license-598b93a6
+    - android-sdk-license-5be876d5
+
+before_script:
+  - sudo service postgresql stop || true
+  - sudo service mysql stop || true
+  - sudo service memcached stop || true
+  - sudo service bootlogd stop || true
+  - sudo service elasticsearch stop || true
+  - sudo service mongodb stop || true
+  - sudo service neo4j stop || true
+  - sudo service cassandra stop || true
+  - sudo service riak stop || true
+  - sudo service rsync stop || true
+  - sudo service x11-common stop || true
+
+before_install:
+  # Permissions
+  #  add executable permission to all scripts in the "scripts" folder before any executions
+  - cd $TRAVIS_BUILD_DIR/travis/scripts; ls . | grep .sh | xargs -I {} chmod a+x {}; cd $TRAVIS_BUILD_DIR; chmod +x ./TestProject/gradlew;
+
+# whitelist
+branches:
+  only:
+    - master
+    - develop
+    - /^\d+\.\d+\.\d+(-(alpha|beta|rc)\.\d+)?$/ #tags
+    - /^release\/.+$/
+
+script:
+  - cd $TRAVIS_BUILD_DIR/TestProject; ./gradlew build > build_output.txt
+
+after_failure:
+  - tail -n 20 ./build_output.txt
+
+after_success:
+  - $TRAVIS_BUILD_DIR/travis/scripts/before_deploy.sh
+  - $TRAVIS_BUILD_DIR/travis/scripts/deploy_hockeyapp.sh
+
+deploy:
+
+env:
+  matrix:
+  - BUILD_ENVIRONMENT="$BUILD_ENVIRONMENT_STAGING"
+      KEYSTORE_NAME="$BUILD_KEYSTORE_NAME_STAGING"
+      KEYSTORE_ALIAS="staging"
+      KEYSTORE_STORE_PASSWORD="$KEYSTORE_STORE_PASSWORD_STAGING"
+      KEYSTORE_PASSWORD="$KEYSTORE_PASSWORD_STAGING"
+      HOCKEYAPP_APP_RELEASE_PATH="$APP_RELEASE_STAGING_PATH"
+      HOCKEYAPP_API_TOKEN="$HOCKEYAPP_API_TOKEN_STAGING"
+
+  - BUILD_ENVIRONMENT="$BUILD_ENVIRONMENT_PRODUCTION"
+      KEYSTORE_NAME="$BUILD_KEYSTORE_NAME_PRODUCTION"
+      KEYSTORE_ALIAS="production"
+      KEYSTORE_STORE_PASSWORD="$KEYSTORE_STORE_PASSWORD_PRODUCTION"
+      KEYSTORE_PASSWORD="$KEYSTORE_PASSWORD_PRODUCION"
+      HOCKEYAPP_APP_RELEASE_PATH="$APP_RELEASE_PRODUCTION_PATH"
+      HOCKEYAPP_API_TOKEN="$HOCKEYAPP_API_TOKEN_PRODUCTION"
+
+  global:
+  - MALLOC_ARENA_MAX=2
+  - KEYSTORE_PATH="$TRAVIS_BUILD_DIR/travis/keys"
+  - APKS_DIR="$TRAVIS_BUILD_DIR/TestProject/app/build/outputs/apk"
+  - APP_RELEASE_STAGING_PATH="$APKS_DIR/app-staging-release.apk"
+  - APP_RELEASE_PRODUCTION_PATH="$APKS_DIR/app-production-release.apk"
+  - APP_DEPLOY_PATH="$APKS_DIR/deploy/"
+
+
+  # LACK OF MEMORY ISSUES
+  - MAVEN_OPTS="-XX:MaxPermSize=512m -Xmx2g"
+  - JVM_OPTS="-XX:MaxPermSize=512m -Xmx2g"
+  - GRADLE_OPTS="-XX:MaxPermSize=512m -Xmx2g"
+
+  # VALUES FROM HOCKEYAPP
+  - HOCKEYAPP_DISTRIBUTION_TAGS="Taqtile"
+
+  # both environments variables to be used by the build matrix
+  - BUILD_ENVIRONMENT_STAGING="Staging"
+  - BUILD_KEYSTORE_NAME_STAGING="staging.keystore"
+  - BUILD_ENVIRONMENT_PRODUCTION="Production"
+  - BUILD_KEYSTORE_NAME_PRODUCTION="production.keystore"
+
+sudo: required
+
+notifications:
+  email:
+    on_failure: change
+    on_success: change
+    recipients:
+      # - some@email.com
