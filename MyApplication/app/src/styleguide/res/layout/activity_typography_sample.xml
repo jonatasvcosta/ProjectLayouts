@@ -1,0 +1,191 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        style="@style/SpaceInterSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_padding"
+        tools:context="com.example.taqtile.myapplication.activities.SampleTypographyActivity">
+
+        <com.example.taqtile.myapplication.components.CustomTextView
+            style="@style/TextElement.H1"
+            android:text="@string/activity_typography_title_general_rule"
+            android:textAllCaps="true" />
+
+        <LinearLayout
+            style="@style/SpaceInterContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                style="@style/TextElement.H2"
+                android:text="@string/activity_typography_title_font_family" />
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_typography_primary_fonts"
+                app:font_family="@string/font_family_primary"
+                app:font_weight="@string/font_weight_regular" />
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_typography_secondary_fonts"
+                app:font_family="@string/font_family_secondary"
+                app:font_weight="@string/font_weight_regular" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/SpaceInterContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                style="@style/TextElement.H2"
+                android:text="@string/activity_typography_title_sizes" />
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_typography_size_xl"
+                android:textSize="@dimen/font_size_extra_large"
+                app:font_family="@string/font_family_primary"
+                app:font_weight="@string/font_weight_regular" />
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_typography_size_l"
+                android:textSize="@dimen/font_size_large"
+                app:font_family="@string/font_family_primary"
+                app:font_weight="@string/font_weight_regular" />
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_typography_size_m"
+                android:textSize="@dimen/font_size_medium"
+                app:font_family="@string/font_family_primary"
+                app:font_weight="@string/font_weight_regular" />
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_typography_size_s"
+                android:textSize="@dimen/font_size_small"
+                app:font_family="@string/font_family_primary"
+                app:font_weight="@string/font_weight_regular" />
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_typography_size_xs"
+                android:textSize="@dimen/font_size_extra_small"
+                app:font_family="@string/font_family_primary"
+                app:font_weight="@string/font_weight_regular" />
+        </LinearLayout>
+
+        <com.example.taqtile.myapplication.components.CustomTextView
+            style="@style/TextElement.H1"
+            android:text="@string/activity_typography_title_textual_in_forms"
+            android:textAllCaps="true" />
+
+        <LinearLayout
+            style="@style/SpaceInterContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                style="@style/TextElement.H2"
+                android:text="@string/activity_typography_title_labels" />
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                style="@style/TextElement.Label"
+                android:text="@string/activity_typography_label_example" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/SpaceInterContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                style="@style/TextElement.H2"
+                android:text="@string/activity_typography_title_input_values" />
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                style="@style/TextElement.InputValue"
+                android:text="@string/activity_typography_input_value_example" />
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                style="@style/TextElement.InputPlaceholder"
+                android:text="@string/activity_typography_input_placeholder_example" />
+
+        </LinearLayout>
+
+        <com.example.taqtile.myapplication.components.CustomTextView
+            style="@style/TextElement.H1"
+            android:text="@string/activity_typography_title_titles"
+            android:textAllCaps="true" />
+
+        <LinearLayout
+            style="@style/SpaceInterContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                style="@style/TextElement.H1"
+                android:text="@string/activity_typography_h1_heading" />
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                style="@style/TextElement.H2"
+                android:text="@string/activity_typography_h2_heading" />
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                style="@style/TextElement.H3"
+                android:text="@string/activity_typography_h3_heading" />
+
+            <com.example.taqtile.myapplication.components.CustomTextView
+                style="@style/TextElement.H4"
+                android:text="@string/activity_typography_h4_heading" />
+
+        </LinearLayout>
+
+        <com.example.taqtile.myapplication.components.CustomTextView
+            style="@style/TextElement.H1"
+            android:text="@string/activity_typography_title_caption"
+            android:textAllCaps="true" />
+
+        <com.example.taqtile.myapplication.components.CustomTextView
+            style="@style/TextElement.Caption"
+            android:text="@string/activity_typography_caption_example" />
+
+        <com.example.taqtile.myapplication.components.CustomTextView
+            style="@style/TextElement.Caption.Error"
+            android:text="@string/activity_typography_error_caption_example" />
+
+        <com.example.taqtile.myapplication.components.CustomTextView
+            style="@style/TextElement.H1"
+            android:text="@string/activity_typography_title_body"
+            android:textAllCaps="true" />
+
+        <com.example.taqtile.myapplication.components.CustomTextView
+            style="@style/TextElement.Body"
+            android:text="@string/activity_typography_body_example" />
+
+    </LinearLayout>
+</ScrollView>

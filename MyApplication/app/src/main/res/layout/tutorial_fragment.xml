@@ -1,0 +1,89 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tutorial_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="56dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/geniantis_logo"
+            android:layout_marginLeft="121dp"
+            android:layout_marginTop="22dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:textSize="12sp"
+            android:layout_marginLeft="264dp"
+            android:textColor="#22C9F3"
+            android:linksClickable="true"
+            android:text="PULAR"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="234dp"
+            android:textSize="17sp"
+            android:layout_marginLeft="109dp"
+            android:textColor="#22C9F3"
+            android:text="BEM VINDO!"/>
+        <TextView
+            android:id="@+id/tutorial_main_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="288dp"
+            android:textSize="14sp"
+            android:textColor="#858585"
+            android:layout_centerHorizontal="true"
+            android:text="O GENIANTIS desenvolve o enorme potencial do seu cérebro para que você tenha uma vida vencedora."/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_homem_tutorial_bem_vindo"
+            android:layout_marginLeft="71dp"
+            android:layout_marginTop="80dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_trofeu_tutorial_bem_vindo"
+            android:layout_marginTop="83dp"
+            android:layout_marginLeft="163dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_medalha_tutorial_bem_vindo"
+            android:layout_marginTop="135dp"
+            android:layout_marginLeft="136dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ic_bolinha_tutorial_1"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="457dp"
+            android:src="@drawable/ic_tutorial_pager_gray_marker" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ic_bolinha_tutorial_2"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="457dp"
+            android:src="@drawable/ic_tutorial_pager_gray_marker" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ic_bolinha_tutorial_3"
+            android:layout_marginLeft="165dp"
+            android:layout_marginTop="457dp"
+            android:src="@drawable/ic_tutorial_pager_gray_marker" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ic_bolinha_tutorial_4"
+            android:layout_marginLeft="185dp"
+            android:layout_marginTop="457dp"
+            android:src="@drawable/ic_tutorial_pager_gray_marker" />
+    </RelativeLayout>
+</ScrollView>

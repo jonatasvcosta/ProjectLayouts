@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- FONT FAMILIES -->
+    <string name="font_family_primary">ITCAvantGardeStd</string>
+    <string name="font_family_secondary">ITCAvantGardeStd</string>
+
+    <!-- FONT WEIGHTS -->
+    <string name="font_weight_bold">-Bold</string>
+    <string name="font_weight_semibold">-Demi</string>
+    <string name="font_weight_regular">-Bk</string>
+    <string name="font_weight_light">-XLt</string>
+    <string name="font_weight_extra_light">-XLt</string>
+
+    <!-- FONT FILE EXTENSION -->
+    <string name="font_file_extension">otf</string>
+
+</resources>

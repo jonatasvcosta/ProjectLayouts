@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.example.taqtile.myapplication"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        removeStylesFile()
+        cleanUpColorsFile()
+        cleanUpStringsFile()
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+        development {
+            applicationId "com.example.taqtile.myapplication.development"
+            resValue "string", "app_name", "My Application - Development"
+        }
+        staging {
+            applicationId "com.example.taqtile.myapplication.staging"
+            resValue "string", "app_name", "My Application - Staging"
+        }
+        production {
+            applicationId "com.example.taqtile.myapplication"
+            resValue "string", "app_name", "My Application"
+        }
+        styleguide {
+            applicationId "com.example.taqtile.myapplication.styleguide"
+            resValue "string", "app_name", "My Application - Guide"
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.android.support:support-v4:23.1.1'
+}// Android Studio Project Template adds some unwanted colors.
+// This method removes the unwanted lines.
+def cleanUpColorsFile() {
+    def file = file('src/main/res/values/colors.xml');
+    String output = ""
+    file.eachLine {
+        String line ->
+            if (!(line.contains("colorPrimary") || line.contains("colorAccent"))) {
+                output = output.concat(line)
+                output = output.concat('\n')
+            }
+    }
+    file.write(output)
+}// Android Studio Project Template adds app_name string 
+// to the strings res file. We already use the gradle file 
+// to define this string. 
+// This method removes the unwanted line.
+def cleanUpStringsFile() {
+    def file = file('src/main/res/values/strings.xml');
+    String output = ""
+    file.eachLine {
+        String line ->
+            if (!line.contains("app_name")) {
+                output = output.concat(line)
+                output = output.concat('\n')
+            }
+    }
+    file.write(output)
+}// Android Studio Project Template creates the style.xml
+// file by default. We don't use it.
+// This method removes it from the project tree.
+def removeStylesFile() {
+    delete fileTree(dir: 'src/main/res/values', include: 'styles.xml')
+}

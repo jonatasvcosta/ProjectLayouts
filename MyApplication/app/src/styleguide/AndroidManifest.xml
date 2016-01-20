@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.taqtile.myapplication">
+
+    <application>
+        <activity
+            android:name=".activities.SampleMainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.SampleActivitiesActivity"
+            android:label="@string/activity_activities_label" />
+        <activity
+            android:name=".activities.SampleColorsActivity"
+            android:label="@string/activity_colors_label" />
+        <activity
+            android:name=".activities.SampleControlsActivity"
+            android:label="@string/activity_controls_label" />
+        <activity
+            android:name=".activities.SampleTypographyActivity"
+            android:label="@string/activity_typography_label" />
+        <activity
+            android:name=".activities.LogIn"
+            android:label="@string/title_activity_log_in"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.EnergiaLivreActivity"
+            android:label="@string/title_activity_energia_livre"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.MenuEnergiaLivreActivity"
+            android:label="@string/title_activity_menu_energia_livre"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.TutorialActivity"
+            android:label="@string/title_activity_tutorial"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.CriarContaActivity"
+            android:label="@string/title_activity_criar_conta"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.DefaultDrawerTestActivity"
+            android:label="@string/title_activity_drawer_test"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.CustomDrawerActivity"
+            android:label="@string/title_activity_custom_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.PageViewTutorialActivity"
+            android:label="@string/title_activity_page_view_tutorial"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

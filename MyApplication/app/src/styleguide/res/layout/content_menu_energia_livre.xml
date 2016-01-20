@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.taqtile.myapplication.activities.MenuEnergiaLivreActivity"
+    tools:showIn="@layout/activity_menu_energia_livre">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close"
+        android:layout_marginTop="46dp"
+        android:layout_marginLeft="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Como está sua Energia Livre agora?"
+        android:textSize="16sp"
+        android:textColor="#4A4A4A"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="397dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/energiaLivre"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/menu_energia_livre_nivel_default" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="417dp"
+        android:text="GEN" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="417dp"
+        android:text="Foco" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="138dp"
+        android:layout_marginTop="417dp"
+        android:text="AdA" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="208dp"
+        android:layout_marginTop="417dp"
+        android:text="Nota" />
+
+</RelativeLayout>

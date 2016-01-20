@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_home"
+            android:icon="@drawable/ic_drawer_home"
+            android:title="Home"/>
+        <item
+            android:id="@+id/drawer_energia_livre"
+            android:icon="@drawable/ic_drawer_energia_livre"
+            android:title="Energia Livre" />
+        <item
+            android:id="@+id/drawer_ada"
+            android:icon="@drawable/ic_drawer_ada"
+            android:title="Adversidade Amiga" />
+        <item
+            android:id="@+id/drawer_gen_vitoria"
+            android:icon="@drawable/ic_drawer_gen_vitoria"
+            android:title="Gen Vitória" />
+        <item
+            android:id="@+id/drawer_foco"
+            android:icon="@drawable/ic_drawer_foco"
+            android:title="Foco" />
+        <item
+            android:id="@+id/drawer_grupos"
+            android:icon="@drawable/ic_drawer_grupos"
+            android:title="Grupos" />
+        <item
+            android:id="@+id/drawer_ajuda"
+            android:icon="@drawable/ic_drawer_ajuda"
+            android:title="Ajuda" />
+        <item
+            android:id="@+id/drawer_configuracoes"
+            android:icon="@drawable/ic_drawer_configuracoes"
+            android:title="Configurações" />
+    </group>
+</menu>
